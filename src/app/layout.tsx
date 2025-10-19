@@ -4,6 +4,7 @@ import "./globals.css";
 import { createClient } from "../prismicio";
 
 import Header from "../components/Header";
+import { Footer } from "../components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,7 +18,16 @@ const geistMono = Geist_Mono({
 
 export async function generateMetadata(): Promise<Metadata> {
   const client = createClient();
-  return {};
+
+  const settings = await client.getSingle("settings");
+
+  return {
+    title: settings.data.site_title || "My Site",
+    description: settings.data.meta_description || "Welcome to my site",
+    openGraph: {
+      images: [settings.data.og_image.url || ""],
+    },
+  };
 }
 
 export default function RootLayout({
@@ -32,7 +42,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
-        <footer>Footer!</footer>
+        <Footer />
       </body>
     </html>
   );

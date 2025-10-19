@@ -76,22 +76,22 @@ export interface SettingsDocumentDataNavigationItem {
   /**
    * Link field in *Settings → Navigation*
    *
-   * - **Field Type**: Text
+   * - **Field Type**: Link
    * - **Placeholder**: *None*
    * - **API ID Path**: settings.navigation[].link
-   * - **Documentation**: https://prismic.io/docs/fields/text
+   * - **Documentation**: https://prismic.io/docs/fields/link
    */
-  link: prismic.KeyTextField;
+  link: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
 
   /**
-   * Text field in *Settings → Navigation*
+   * Label field in *Settings → Navigation*
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: settings.navigation[].text
+   * - **API ID Path**: settings.navigation[].label
    * - **Documentation**: https://prismic.io/docs/fields/text
    */
-  text: prismic.KeyTextField;
+  label: prismic.KeyTextField;
 }
 
 /**

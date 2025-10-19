@@ -35,16 +35,20 @@
           "repeat": true,
           "fields": {
             "link": {
-              "type": "Text",
+              "type": "Link",
               "config": {
                 "label": "Link",
-                "placeholder": ""
+                "placeholder": "",
+                "select": null,
+                "allowTargetBlank": true,
+                "allowText": true,
+                "repeat": false
               }
             },
-            "text": {
+            "label": {
               "type": "Text",
               "config": {
-                "label": "Text",
+                "label": "Label",
                 "placeholder": ""
               }
             }

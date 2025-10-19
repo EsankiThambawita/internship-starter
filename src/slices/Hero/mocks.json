@@ -40,7 +40,6 @@
 				}
 			},
 			"image": {
-				"__TYPE__": "ImageContent",
 				"origin": {
 					"id": "main",
 					"url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a",
@@ -59,6 +58,8 @@
 					"background": "transparent"
 				},
 				"alt": "orbit",
+				"credits": null,
+				"__TYPE__": "ImageContent",
 				"thumbnails": {}
 			}
 		},

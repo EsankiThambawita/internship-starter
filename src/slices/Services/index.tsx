@@ -47,23 +47,28 @@ const Services: FC<ServicesProps> = ({ slice }) => {
     >
       <br />
       <PrismicRichText components={components} field={slice.primary.heading} />
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 max-w-5xl gap-x-8 gap-y-12 mx-auto sm:place-items-start">
-        {slice.primary.services_grid.map((item, index) => (
-          <div
-            key={index}
-            className="max-w-xs grid sm:place-items-start place-items-center"
-          >
-            {item.icon && <div className="mb-5">{icons[item.icon]}</div>}
-            <PrismicRichText components={components} field={item.title} />
-            <PrismicRichText components={components} field={item.description} />
-            <PrismicNextLink
-              field={item.link}
-              className="bg-pink-200/50 text-pink-700 rounded-lg px-4 py-2 inline-block font-medium hover:bg-pink-300/50 transition"
+      <div className="flex justify-center">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+          {slice.primary.services_grid.map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center sm:items-start"
             >
-              {item.label}{" "}
-            </PrismicNextLink>
-          </div>
-        ))}
+              {item.icon && <div className="mb-5">{icons[item.icon]}</div>}
+              <PrismicRichText components={components} field={item.title} />
+              <PrismicRichText
+                components={components}
+                field={item.description}
+              />
+              <PrismicNextLink
+                field={item.link}
+                className="bg-pink-200/50 text-pink-700 rounded-lg px-4 py-2 inline-block font-medium hover:bg-pink-300/50 transition"
+              >
+                {item.label}{" "}
+              </PrismicNextLink>
+            </div>
+          ))}
+        </div>
       </div>
     </Bounded>
   );

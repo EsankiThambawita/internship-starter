@@ -58,7 +58,6 @@ const Hero: FC<HeroProps> = ({ slice }) => {
               field={slice.primary.image}
               className="drop-shadow-xl max-w-4xl w-full"
             />
-
             {}
           </div>
         </Bounded>

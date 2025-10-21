@@ -7,12 +7,10 @@
 				"__TYPE__": "StructuredTextContent",
 				"value": [
 					{
-						"type": "heading2",
+						"type": "heading1",
 						"content": {
-							"text": "Technologies Used",
-							"spans": []
-						},
-						"direction": "ltr"
+							"text": "Shirt"
+						}
 					}
 				]
 			},

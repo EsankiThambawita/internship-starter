@@ -1,4 +1,6 @@
-const SvgIcon = () => (
+import React from "react";
+
+const LogoIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
@@ -30,4 +32,4 @@ const SvgIcon = () => (
   </svg>
 );
 
-export default SvgIcon;
+export default LogoIcon;

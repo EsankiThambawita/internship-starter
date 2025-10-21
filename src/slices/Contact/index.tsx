@@ -70,11 +70,11 @@ const Contact: FC<ContactProps> = ({ slice }) => {
             placeholder="Your Message"
             required
             rows={5}
-            className="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400"
+            className="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
           />
           <button
             type="submit"
-            className="bg-purple-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors"
+            className="bg-purple-800 text-white font-semibold py-3 px-6 rounded-lg hover:bg-purple-950 transition-colors"
           >
             Send Message
           </button>

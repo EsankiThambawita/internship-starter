@@ -43,6 +43,7 @@ const TextWithImage: FC<TextWithImageProps> = ({ slice }) => {
             "rounded-lg shadow-md shadow-gray-400/40",
             slice.variation === "imageRight" && "md:order-2"
           )}
+          alt={""}
         />
         <div className="grid gap-4">
           <PrismicRichText

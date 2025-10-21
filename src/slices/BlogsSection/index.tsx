@@ -9,6 +9,7 @@ import {
 import Heading from "@/components/Heading";
 import Bounded from "@/components/Bounded";
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
+import { ArrowIcon } from "@/Icons/ArrowIcon";
 
 const components: JSXMapSerializer = {
   heading2: ({ children }) => (
@@ -88,23 +89,3 @@ const BlogsSection: FC<BlogsSectionProps> = async ({ slice }) => {
 };
 
 export default BlogsSection;
-
-const ArrowIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="12"
-    height="12"
-    viewBox="0 0 11 20"
-  >
-    <path
-      fill="#c05dc8"
-      fillRule="evenodd"
-      d="M.366 19.708c.405.39 1.06.39 1.464 0l8.563-8.264a1.95 1.95 0 0 0 0-2.827L1.768.292A1.063 1.063 0 0 0 .314.282a.976.976 0 0 0-.011 1.425l7.894 7.617a.975.975 0 0 1 0 1.414L.366 18.295a.974.974 0 0 0 0 1.413"
-      className="svgShape color000000-0 selectable"
-    ></path>
-  </svg>
-);
-
-const icons = {
-  ArrowIcon: <ArrowIcon />,
-};

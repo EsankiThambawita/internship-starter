@@ -7,9 +7,9 @@
 				"__TYPE__": "StructuredTextContent",
 				"value": [
 					{
-						"type": "heading1",
+						"type": "heading2",
 						"content": {
-							"text": "Shirt"
+							"text": "Minerals"
 						}
 					}
 				]
@@ -36,7 +36,7 @@
 										{
 											"type": "heading3",
 											"content": {
-												"text": "Important"
+												"text": "Mental"
 											}
 										}
 									]
@@ -98,10 +98,8 @@
 										{
 											"type": "heading3",
 											"content": {
-												"text": "Slice Machine",
-												"spans": []
-											},
-											"direction": "ltr"
+												"text": "Blanket"
+											}
 										}
 									]
 								}
@@ -163,10 +161,8 @@
 										{
 											"type": "heading3",
 											"content": {
-												"text": "Slice Machine",
-												"spans": []
-											},
-											"direction": "ltr"
+												"text": "Section"
+											}
 										}
 									]
 								}

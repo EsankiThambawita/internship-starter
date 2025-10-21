@@ -15,7 +15,7 @@ import ArrowIcon from "@/Icons/ArrowIcon";
 
 const components: JSXMapSerializer = {
   heading2: ({ children }) => (
-    <Heading as="h2" size="md" className="mb-12">
+    <Heading as="h2" size="md" className="mb-12 ">
       {children}
     </Heading>
   ),

@@ -135,6 +135,7 @@ export type BlogPostsDocument<Lang extends string = string> =
   >;
 
 type HomepageDocumentDataSlicesSlice =
+  | TextWithImageSlice
   | BlogsSectionSlice
   | ServicesSlice
   | HeroSlice;

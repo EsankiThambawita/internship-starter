@@ -1,0 +1,45 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Frame"
+						}
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Mollit exercitation pariatur velit reprehenderit id dolor cillum adipisicing pariatur ipsum mollit. Eiusmod exercitation ullamco excepteur. Eiusmod id non adipisicing."
+						}
+					}
+				]
+			},
+			"link": {
+				"key": "719848a8-d737-4c92-b632-243515975ab3",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://twitter.com",
+					"text": "spell"
+				}
+			},
+			"label": {
+				"__TYPE__": "FieldContent",
+				"value": "area",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

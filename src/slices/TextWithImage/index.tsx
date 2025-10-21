@@ -40,7 +40,7 @@ const TextWithImage: FC<TextWithImageProps> = ({ slice }) => {
         <PrismicNextImage
           field={slice.primary.image}
           className={clsx(
-            "rounded-lg",
+            "rounded-lg shadow-md shadow-gray-400/40",
             slice.variation === "imageRight" && "md:order-2"
           )}
         />

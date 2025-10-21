@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Content } from "@prismicio/client";
+import { Content, createClient } from "@prismicio/client";
 import {
   SliceComponentProps,
   PrismicRichText,
@@ -11,16 +11,12 @@ import { PrismicNextLink } from "@prismicio/next";
 
 const components: JSXMapSerializer = {
   heading2: ({ children }) => (
-    <Heading as="h2" size="md" className="text-center mb-12">
+    <Heading as="h2" size="md" className="mb-12">
       {children}
     </Heading>
   ),
   heading3: ({ children }) => (
-    <Heading
-      as="h2"
-      size="sm"
-      className="mb-3 font-medium sm:text-left text-center"
-    >
+    <Heading as="h2" size="sm" className="mb-3 font-medium sm:text-left">
       {children}
     </Heading>
   ),
@@ -39,7 +35,7 @@ export type ServicesProps = SliceComponentProps<Content.ServicesSlice>;
 /**
  * Component for "Services" Slices.
  */
-const Services: FC<ServicesProps> = ({ slice }) => {
+const Services: FC<ServicesProps> = async ({ slice }) => {
   return (
     <Bounded
       data-slice-type={slice.slice_type}
@@ -52,20 +48,25 @@ const Services: FC<ServicesProps> = ({ slice }) => {
           {slice.primary.services_grid.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-center sm:items-start"
+              className="flex flex-col items-center sm:items-start bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
               {item.icon && <div className="mb-5">{icons[item.icon]}</div>}
               <PrismicRichText components={components} field={item.title} />
-              <PrismicRichText
-                components={components}
-                field={item.description}
-              />
-              <PrismicNextLink
-                field={item.link}
-                className="bg-pink-200/50 text-pink-700 rounded-lg px-4 py-2 inline-block font-medium hover:bg-pink-300/50 transition"
-              >
-                {item.label}{" "}
-              </PrismicNextLink>
+              <div className="mb-4">
+                <PrismicRichText
+                  components={components}
+                  field={item.description}
+                />
+              </div>
+              {item.link && (
+                <PrismicNextLink
+                  field={item.link}
+                  className="text-pink-700 font-semibold flex items-center gap-1 hover:underline mt-2"
+                >
+                  {item.label}
+                  <ArrowIcon />
+                </PrismicNextLink>
+              )}
             </div>
           ))}
         </div>
@@ -122,8 +123,25 @@ const SMIcon = () => (
   </svg>
 );
 
+const ArrowIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="12"
+    height="12"
+    viewBox="0 0 11 20"
+  >
+    <path
+      fill="#98429f"
+      fillRule="evenodd"
+      d="M.366 19.708c.405.39 1.06.39 1.464 0l8.563-8.264a1.95 1.95 0 0 0 0-2.827L1.768.292A1.063 1.063 0 0 0 .314.282a.976.976 0 0 0-.011 1.425l7.894 7.617a.975.975 0 0 1 0 1.414L.366 18.295a.974.974 0 0 0 0 1.413"
+      className="svgShape color000000-0 selectable"
+    ></path>
+  </svg>
+);
+
 const icons = {
   NextJS: <NextIcon />,
   Prismic: <PrismicIcon />,
   "Slice Machine": <SMIcon />,
+  ArrowIcon: <ArrowIcon />,
 };

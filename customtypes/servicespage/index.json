@@ -1,7 +1,7 @@
 {
   "format": "page",
-  "id": "settingspage",
-  "label": "Servicespage",
+  "id": "servicespage",
+  "label": "ServicesPage",
   "repeatable": false,
   "status": true,
   "json": {

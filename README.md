@@ -1,6 +1,6 @@
 # 🧩 Prismic + Next.js Website
 
-This project is a **dynamic website built with Next.js, Prismic CMS, and Slice Machine**, designed to make content management and updates simple for non-technical users. It allows editors to easily update text, images, and add new items (such as blog posts or services) directly from Prismic — without needing code changes.
+This project is a **dynamic website built with Next.js, Prismic CMS, and Slice Machine**, designed to make content management and updates simple for non-technical users. It allows editors to easily update text, images, and add new items (such as blog posts or services) directly from Prismic, without needing code changes.
 
 ---
 

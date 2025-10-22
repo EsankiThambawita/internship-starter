@@ -48,25 +48,25 @@ This project is a **dynamic website built with Next.js, Prismic CMS, and Slice M
 
 1. Clone repo:
 
-git clone https://github.com/EsankiThambawita/internship-starter.git
-cd internship-starter
+- git clone https://github.com/EsankiThambawita/internship-starter.git
+- cd internship-starter
 
 2. Install dependencies:
 
-npm install
+- npm install
 
 
 3. Add Prismic environment variables in .env.local if you want to fetch content locally:
 
-PRISMIC_WEBHOOK_SECRET=internship-starter-secret
+- PRISMIC_WEBHOOK_SECRET=internship-starter-secret
 
 
 4. Run dev server:
 
-npm run dev
+- npm run dev
 
 
-Open http://localhost:3000
+5. Open http://localhost:3000
 
 ### Updating Content in Prismic
 

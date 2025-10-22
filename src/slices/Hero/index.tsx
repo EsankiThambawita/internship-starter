@@ -56,7 +56,7 @@ const Hero: FC<HeroProps> = ({ slice }) => {
             </Button>
             <PrismicNextImage
               field={slice.primary.image}
-              className="drop-shadow-xl max-w-4xl w-full rounded-2xl"
+              className="drop-shadow-xl max-w-lg md:max-w-4xl w-full rounded-2xl mx-auto"
             />
             {}
           </div>

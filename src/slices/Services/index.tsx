@@ -49,10 +49,9 @@ const Services: FC<ServicesProps> = async ({ slice }) => {
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
     >
-      <br />
       <PrismicRichText components={components} field={slice.primary.heading} />
       <div className="flex justify-center">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-4 sm:gap-x-8 gap-y-12">
           {slice.primary.services_grid.map((item, index) => (
             <div
               key={index}

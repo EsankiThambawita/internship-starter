@@ -16,11 +16,11 @@ export default function Heading({
   return (
     <Comp
       className={clsx(
-        "text-7xl font-bold leading-tight tracking-tight font-display text-slate-800",
-        size === "sm" && "text-2xl md:text-3xl",
-        size === "md" && "text-3xl md:text-4xl",
-        size === "lg" && "text-4xl md:text-5xl",
-        size === "xl" && "text-5xl md:text-7xl",
+        "font-bold leading-tight tracking-tight font-display text-slate-800",
+        size === "sm" && "text-xl md:text-2xl",
+        size === "md" && "text-2xl md:text-4xl",
+        size === "lg" && "text-3xl md:text-5xl",
+        size === "xl" && "text-4xl md:text-7xl",
         className
       )}
     >

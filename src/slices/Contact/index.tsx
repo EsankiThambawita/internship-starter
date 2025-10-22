@@ -43,7 +43,7 @@ const Contact: FC<ContactProps> = ({ slice }) => {
     <Bounded
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className="bg-white rounded-2xl shadow-xl p-8 md:p-12 max-w-3xl mx-auto mt-12"
+      className="bg-white rounded-2xl shadow-xl p-4 md:p-8 max-w-3xl mx-auto mt-12"
     >
       <PrismicRichText components={components} field={slice.primary.heading} />
       <PrismicRichText components={components} field={slice.primary.body} />

@@ -48,8 +48,8 @@ This project is a **dynamic website built with Next.js, Prismic CMS, and Slice M
 
 1. Clone repo:
 
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/EsankiThambawita/internship-starter.git
+cd internship-starter
 
 2. Install dependencies:
 
